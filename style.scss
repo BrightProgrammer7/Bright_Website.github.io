@@ -1,0 +1,257 @@
+@import "util";
+@import "vars";
+
+header {
+  padding: 15px 0;
+  background: url("images/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50rem;
+}
+main {
+  background-color: cornflowerblue;
+  padding: 100px 25px;
+}
+footer {
+  height: 400px;
+  padding: 15px 25px;
+  position: relative;
+  background-color: #1abc9c;
+  box-shadow: 0 -1px 3px #0000001a, 0 -2px 2px #0000000f, 0 0 2px #00000012;
+}
+nav {
+  height: 6rem;
+  position: relative;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.102), 0 2px 2px rgba(0, 0, 0, 0.059),
+    0 0 2px rgba(0, 0, 0, 0.071);
+  div {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 42px;
+      a {
+        color: $secondary-color;
+        &:hover {
+          color: gold;
+        }
+      }
+    }
+    .dropbtn {
+      display: none;
+    }
+    ul,
+    div {
+      list-style: none;
+      display: flex;
+      margin-top: 10px;
+      li {
+        font-size: 16px;
+        margin: 2px;
+        .icon {
+          display: none;
+        }
+        a {
+          padding: 10px 15px;
+          border: 1px solid wheat;
+          border-radius: 5px;
+          @include background-color($back-color);
+          &:hover {
+            color: $heading-color;
+            border-color: purple;
+            background-color: $back-links;
+          }
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden;
+  padding: 15px 5px;
+  .h,
+  section {
+    @extend %box;
+    height: 100%;
+    padding-top: 150px;
+    aside {
+      width: 50%;
+      h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: $heading-color;
+      }
+      p {
+        text-align: left;
+      }
+      button {
+        @extend %btn;
+        &:first-child {
+          @include background-color(lighten($primary-color, 10%));
+          &:hover {
+            background-color: darken($primary-color, 10%);
+          }
+        }
+        &:last-child {
+          @include background-color(darken($secondary-color, 10%));
+          &:hover {
+            background-color: lighten($secondary-color, 10%);
+          }
+        }
+        a {
+          font-weight: 600;
+          color: $links-color;
+          i {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    #logo {
+      width: 50%;
+      img {
+        border-radius: 50%;
+        width: 200px;
+        justify-content: center;
+        margin-left: 90px;
+        padding: 20px;
+        height: 300px;
+        width: 80%;
+      }
+    }
+  }
+}
+
+.m.container {
+  section {
+    display: flex;
+    padding: 100px 40px;
+    box-shadow: 0 0 5px rgba(1, 1, 1, 0.7), -3px 0 5px -3px rgba(1, 1, 1, 0.87),
+      3px 0 5px -3px rgba(1, 1, 1, 0.87);
+    figure {
+      width: 300px;
+      display: inline-block;
+      margin-right: 10px;
+      img {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        border-radius: 50%;
+        padding: 20px;
+      }
+      figcaption {
+        text-align: center;
+      }
+    }
+    .post {
+      @extend %box;
+      flex-direction: column;
+      line-height: 2;
+      h3 {
+        color: #d2d2d2;
+        font-size: 24px;
+      }
+      h4 {
+        color: #87ceeb;
+        font-size: 18px;
+      }
+      p {
+        z-index: 0;
+      }
+    }
+  }
+}
+
+.f.container {
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding-bottom: 10px;
+    }
+    .links {
+      padding: 0 40px;
+      a {
+        color: #2f2f2f;
+        &:hover {
+          color: #f6a623;
+        }
+      }
+    }
+    .story {
+      padding: 0 40px;
+      p {
+        text-align: left;
+        color: #1a1a1a;
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 24px;
+  }
+  .container section {
+    flex-direction: column;
+  }
+  .topnav {
+    .icon {
+      float: right;
+      display: block;
+    }
+    a {
+      display: none;
+    }
+  }
+  .responsive {
+    position: absolute;
+    flex-direction: column;
+    right: 6px;
+    top: 64px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    a {
+      display: block;
+      float: none;
+      text-align: left;
+    }
+  }
+}
+@media screen and (max-width: 1080px) and (min-width: 720px) {
+  h1 {
+    font-size: 36px;
+  }
+  .topnav {
+    display: inline-block;
+    .dropbtn {
+      float: left;
+      display: block;
+    }
+    a {
+      display: none;
+    }
+  }
+  .interactive {
+    position: absolute;
+    flex-direction: column;
+    right: 6px;
+    top: 64px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    a {
+      display: block;
+      float: none;
+      text-align: left;
+    }
+  }
+}

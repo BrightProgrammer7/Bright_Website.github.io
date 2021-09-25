@@ -1,0 +1,394 @@
+.my-1 {
+  margin: 10px 0;
+}
+
+.my-2 {
+  margin: 20px 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.container .h,
+.container section, .m.container section .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .h aside button,
+.container section aside button {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+}
+
+.my-1 {
+  margin: 10px 0;
+}
+
+.my-2 {
+  margin: 20px 0;
+}
+
+header {
+  padding: 15px 0;
+  background: url("images/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50rem;
+}
+
+main {
+  background-color: cornflowerblue;
+  padding: 100px 25px;
+}
+
+footer {
+  height: 400px;
+  padding: 15px 25px;
+  position: relative;
+  background-color: #1abc9c;
+  -webkit-box-shadow: 0 -1px 3px #0000001a, 0 -2px 2px #0000000f, 0 0 2px #00000012;
+          box-shadow: 0 -1px 3px #0000001a, 0 -2px 2px #0000000f, 0 0 2px #00000012;
+}
+
+nav {
+  height: 6rem;
+  position: relative;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.102), 0 2px 2px rgba(0, 0, 0, 0.059), 0 0 2px rgba(0, 0, 0, 0.071);
+          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.102), 0 2px 2px rgba(0, 0, 0, 0.059), 0 0 2px rgba(0, 0, 0, 0.071);
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav div h1 {
+  font-size: 42px;
+}
+
+nav div h1 a {
+  color: yellow;
+}
+
+nav div h1 a:hover {
+  color: gold;
+}
+
+nav div .dropbtn {
+  display: none;
+}
+
+nav div ul,
+nav div div {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+nav div ul li,
+nav div div li {
+  font-size: 16px;
+  margin: 2px;
+}
+
+nav div ul li .icon,
+nav div div li .icon {
+  display: none;
+}
+
+nav div ul li a,
+nav div div li a {
+  padding: 10px 15px;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  background-color: #3535d4;
+  color: white;
+}
+
+nav div ul li a:hover,
+nav div div li a:hover {
+  color: darkblue;
+  border-color: purple;
+  background-color: #e1e1e1;
+}
+
+nav div ul li a i,
+nav div div li a i {
+  margin-right: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow: hidden;
+  padding: 15px 5px;
+}
+
+.container .h,
+.container section {
+  height: 100%;
+  padding-top: 150px;
+}
+
+.container .h aside,
+.container section aside {
+  width: 50%;
+}
+
+.container .h aside h2,
+.container section aside h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: darkblue;
+}
+
+.container .h aside p,
+.container section aside p {
+  text-align: left;
+}
+
+.container .h aside button:first-child,
+.container section aside button:first-child {
+  background-color: #3333ff;
+  color: white;
+}
+
+.container .h aside button:first-child:hover,
+.container section aside button:first-child:hover {
+  background-color: #0000cc;
+}
+
+.container .h aside button:last-child,
+.container section aside button:last-child {
+  background-color: #cccc00;
+  color: white;
+}
+
+.container .h aside button:last-child:hover,
+.container section aside button:last-child:hover {
+  background-color: #ffff33;
+}
+
+.container .h aside button a,
+.container section aside button a {
+  font-weight: 600;
+  color: #000000c0;
+}
+
+.container .h aside button a i,
+.container section aside button a i {
+  margin-right: 5px;
+}
+
+.container .h #logo,
+.container section #logo {
+  width: 50%;
+}
+
+.container .h #logo img,
+.container section #logo img {
+  border-radius: 50%;
+  width: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 90px;
+  padding: 20px;
+  height: 300px;
+  width: 80%;
+}
+
+.m.container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 40px;
+  -webkit-box-shadow: 0 0 5px rgba(1, 1, 1, 0.7), -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
+          box-shadow: 0 0 5px rgba(1, 1, 1, 0.7), -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
+}
+
+.m.container section figure {
+  width: 300px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.m.container section figure img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.m.container section figure figcaption {
+  text-align: center;
+}
+
+.m.container section .post {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 2;
+}
+
+.m.container section .post h3 {
+  color: #d2d2d2;
+  font-size: 24px;
+}
+
+.m.container section .post h4 {
+  color: #87ceeb;
+  font-size: 18px;
+}
+
+.m.container section .post p {
+  z-index: 0;
+}
+
+.f.container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.f.container section h4 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-bottom: 10px;
+}
+
+.f.container section .links {
+  padding: 0 40px;
+}
+
+.f.container section .links a {
+  color: #2f2f2f;
+}
+
+.f.container section .links a:hover {
+  color: #f6a623;
+}
+
+.f.container section .story {
+  padding: 0 40px;
+}
+
+.f.container section .story p {
+  text-align: left;
+  color: #1a1a1a;
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 24px;
+  }
+  .container section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topnav .icon {
+    float: right;
+    display: block;
+  }
+  .topnav a {
+    display: none;
+  }
+  .responsive {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    right: 6px;
+    top: 64px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  .responsive a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 720px) {
+  h1 {
+    font-size: 36px;
+  }
+  .topnav {
+    display: inline-block;
+  }
+  .topnav .dropbtn {
+    float: left;
+    display: block;
+  }
+  .topnav a {
+    display: none;
+  }
+  .interactive {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    right: 6px;
+    top: 64px;
+    z-index: 1;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  .interactive a {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=style.css.map */

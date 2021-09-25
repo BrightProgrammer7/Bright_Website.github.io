@@ -1,0 +1,29 @@
+$body-font: Arial, Helvetica, sans-serif;
+$body-color: #fff;
+$back-color: #3535d4;
+$primary-color: blue;
+$secondary-color: yellow;
+$heading-color: darkblue;
+$links-color: #000000c0;
+$back-links: #e1e1e1;
+
+@function text-color($color) {
+  @if (lightness($color) > 70) {
+    @return $color;
+  } @else {
+    @return lighten($color, 100%);
+  }
+}
+
+@mixin background-color($color) {
+  background-color: $color;
+  color: text-color($color);
+}
+
+$steps: (1, 2);
+
+@each $step in $steps {
+  .my-#{$step} {
+    margin: #{$step * 10}px 0;
+  }
+}
