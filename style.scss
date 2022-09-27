@@ -8,11 +8,12 @@ header {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 50rem;
+  height: 100%;
 }
 main {
   background-color: cornflowerblue;
   padding: 100px 25px;
+  height: 100%;
 }
 footer {
   height: 400px;
@@ -20,6 +21,7 @@ footer {
   position: relative;
   background-color: #1abc9c;
   box-shadow: 0 -1px 3px #0000001a, 0 -2px 2px #0000000f, 0 0 2px #00000012;
+  height: 100%;
 }
 nav {
   height: 6rem;
